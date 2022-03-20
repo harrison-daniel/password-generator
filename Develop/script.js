@@ -1,6 +1,5 @@
 // Assignment code here
 
-
 // Get references to the #generate element
 //var generateBtn = document.querySelector("#generate");
 
@@ -19,16 +18,20 @@
 // end starter code
 //------------------------------------------
 
-  var specialCharsArr = ["~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "?", "<", ">"];
+
+
+
+
+
+
+
+
+
+  var specialChars = ["~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "?", "<", ">"];
   var numericChars = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   var lowercaseChars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   var uppercaseChars = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-  
-  //var maxPasswordLength = 128;
-  //var minPasswordLength = 8;
-  
-
- 
+  var userCriteria = []
 
 // Assignment code here
 
@@ -36,50 +39,73 @@ function generatePassword() {
   console.log("button clicked");
 
   // PROMPT USER FOR PASS CRITERIA
-
   // 1) Ask user for character length
-  var userCharsLength = window.prompt ("How many characters would you like your password to be? (Must be between 8 and 128 characters long");
+  var userCharsLength = parseInt(window.prompt ("How many characters would you like your password to be? (Must be between 8 and 128 characters long"));
 
   // Validate character length is between 8-128
-    while (userCharsLength <= 7 || userCharsLength >= 129 || isNaN (userCharsLength) || userCharsLength === "" ) {
+    while (userCharsLength <= 7 || userCharsLength >= 129 || userCharsLength === "" || isNaN (userCharsLength)) {
       window.alert("Please enter a valid number between 8 and 128");
 
       var userCharsLength = window.prompt ("How many characters would you like your password to be? (Must be between 8 and 128 characters long");
     }
     // log character length
-    console.log("password length is" + userCharsLength)
-
-    //  2) Ask user for special characters
-    var userSpecialChars = window.confirm ("Click OK to confirm including Special characters.");
-
-    console.log("Use Special Characters" + userSpecialChars);
-    // Confirm Special Characters or not
-
-    // user selection - numeric characters
-    var userNumericChars = window.confirm ("Click OK to confirm including Numeric characters.");
-    console.log("Use Numeric Characters" + userNumericChars);
-    // confirm numeric characters
+    console.log(userCharsLength)
 
 
-    // user selection - lowercase characters
-    var userLowercaseChars = window.confirm ("Click OK to confirm including Lowercase characters.");
-    console.log("USe Lowercase Characters" + userLowercaseChars);
-    // comfirm lowercase characters
+
+  //  2) Ask user for special characters
+  var userSpecialChars = window.confirm ("Click OK to confirm including Special characters.");
+  console.log(userSpecialChars);
+ 
+  // 3) Ask user for numeric characters
+  var userNumericChars = window.confirm ("Click OK to confirm including Numeric characters.");
+  console.log(userNumericChars);
+  
+  // 4) Ask user for lowercase characters
+  var userLowercaseChars = window.confirm ("Click OK to confirm including Lowercase characters.");
+  console.log(userLowercaseChars);
+  
+  // 5) Ask user for uppercase characters
+  var userUppercaseChars = window.confirm ("Click OK to confirm including Uppercase characters.");
+  console.log(userUppercaseChars);
+ 
 
 
-    // user selection - uppercase characters
-    var userUppercaseChars = window.confirm ("Click OK to confirm including Uppercase characters.");
-    console.log("Use Uppercase Characters" + userUppercaseChars);
-    // confirm uppercase characters
-      
-    
-  // validate input
-    
+  // Validate user inputs
+  
+  if (userSpecialChars === true) {
+    userCriteria.push(specialChars);
+  }
+  
+  if (userNumericChars === true) {
+    userCriteria.push(numericChars)
+  };
+
+  if (userNumericChars === true) {
+    userCriteria.push(lowercaseChars)
+  };
+
+  if (userNumericChars === true) {
+    userCriteria.push(uppercaseChars)
+  };
+
+  console.log(userCriteria);
+  
+  
+  for (var i = 0; i < userCharsLength; i++) {
+    var index = Math.floor(userCriteria.length * Math.random());  
+  }
+
+
 
   // generated password output
+  // var generatedPass = function(min, max) {
+  // var randomPassword = Math.floor(Math.random() * (max - min) + min);
+  //   }
 
 
-  return "generated password will go here"
+
+  return password;
 }
 
 // Get references to the #generate element
