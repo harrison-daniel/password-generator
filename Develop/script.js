@@ -30,7 +30,6 @@ function generatePassword() {
     console.log(userCharsLength)
 
 
-
   //  2) Ask user for special characters
   var userSpecialChars = window.confirm ("Click OK to confirm including Special characters.");
   console.log(userSpecialChars);
@@ -39,7 +38,7 @@ function generatePassword() {
     spec = true;
   }else{
     spec = false;
-  }
+  };
 
   // 3) Ask user for numeric characters
   var userNumericChars = window.confirm ("Click OK to confirm including Numeric characters.");
@@ -49,7 +48,7 @@ function generatePassword() {
     num = true;
   }else{
     num = false;
-  }
+  };
 
   // 4) Ask user for lowercase characters
   var userLowercaseChars = window.confirm ("Click OK to confirm including Lowercase characters.");
@@ -59,7 +58,7 @@ function generatePassword() {
     lower = true;
   }else{
     lower = false;
-  }
+  };
 
   // 5) Ask user for uppercase characters
   var userUppercaseChars = window.confirm ("Click OK to confirm including Uppercase characters.");
@@ -76,24 +75,24 @@ function generatePassword() {
   
   if (spec) {
     userCriteria.push(specialChars);
-  }
+  };
   
   if (num) {
     userCriteria.push(numericChars)
-  }
+  };
 
   if (lower) {
     userCriteria.push(lowercaseChars)
-  }
+  };
 
   if (upper) {
     userCriteria.push(uppercaseChars)
-  }
+  };
 
   if (!spec && !num && !lower && !upper) {
     window.alert ("Please select atleast one password criteria");
     generatePassword();
-  }
+  };
 
   console.log(userCriteria);
   
@@ -104,8 +103,9 @@ function generatePassword() {
     var charSetIndex = Math.floor(charSet.length * Math.random());
     var char = charSet[charSetIndex];
     password += char;
-  }
-  console.log(password)
+  };
+
+  console.log(password);
 
   return password;
 }

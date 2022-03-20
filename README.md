@@ -2,7 +2,9 @@
 
 ## Purpose
 
-Utulize Javascript to enable functionality of a password generator.
+JavaScript Challenge: Password Generator.
+
+Create an application that generates a random password based on criteria they've selected (Password Length, Character Punctuation, use of Numbers and Special Characters).
 
 ## User Story
 
@@ -36,7 +38,11 @@ THEN the password is either displayed in an alert or written to the page
 
 ## Mock-Up
 
+<img src=./assets/images/03-javascript-homework-demo.png>
+
 ## Website
+
+https://harrison-daniel.github.io/CH-03-password-generator/
 
 ## Contribution
 
