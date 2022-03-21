@@ -4,7 +4,7 @@
 
 JavaScript Challenge: Password Generator.
 
-Create an application that generates a random password based on criteria they've selected (Password Length, Character Punctuation, use of Numbers and Special Characters).
+Create an application that generates a random password based on criteria selected (Password Length, Character Punctuation, use of Numbers and Special Characters).
 
 ## User Story
 
@@ -38,7 +38,10 @@ THEN the password is either displayed in an alert or written to the page
 
 ## Mock-Up
 
-<img src=./assets/images/03-javascript-homework-demo.png>
+<img src=./assets/images/03-javascript-mockup.png>
+<img src=./assets/images/03-javascript-char-length.png>
+<img src=./assets/images/03-javascript-specialchar.png>
+<img src=./assets/images/03-javascript-generated-password.png>
 
 ## Website
 
@@ -46,6 +49,6 @@ https://harrison-daniel.github.io/CH-03-password-generator/
 
 ## Contribution
 
-Xandromus: friendly-parakeeet
+Started code by Trilogy Education and Xandromus: friendly-parakeeet
 
 Harrison Daniel
