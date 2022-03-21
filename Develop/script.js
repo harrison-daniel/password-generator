@@ -13,14 +13,15 @@ function generatePassword() {
   
   // PROMPT USER FOR PASS CRITERIA
   // 1) Ask user for character length -- Translate into number format
-  var userCharsLength = parseInt(window.prompt ("How many characters would you like your password to be? (Must be between 8 and 128 characters long"));
+  var userCharsLength = parseInt(window.prompt ("How many characters would you like your password to be?  (Must be between 8 and 128 characters long)"));
 
   // Validate character length is between 8-128 and display prompt until correct
     while (userCharsLength <= 7 || userCharsLength >= 129 || userCharsLength === "" || isNaN (userCharsLength)) {
       window.alert("Please enter a valid number between 8 and 128");
-
-      var userCharsLength = window.prompt ("How many characters would you like your password to be? (Must be between 8 and 128 characters long");
-    }
+     
+      var userCharsLength = window.prompt ("How many characters would you like your password to be?  (Must be between 8 and 128 characters long)");
+      }
+      
     // log character length
     console.log(userCharsLength)
 
