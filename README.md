@@ -49,6 +49,6 @@ https://harrison-daniel.github.io/CH-03-password-generator/
 
 ## Contribution
 
-Started code by Trilogy Education and Xandromus: friendly-parakeeet
+Starter code by Trilogy Education and Xandromus: friendly-parakeeet
 
 Harrison Daniel
