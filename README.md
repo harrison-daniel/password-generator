@@ -2,9 +2,9 @@
 
 ## Purpose
 
-JavaScript Challenge: Password Generator.
+Third challenge "JavaScript Challenge: Password Generator" for the University of Richmond Bootcamp.
 
-Create an application that generates a random password based on criteria selected (Password Length, Character Punctuation, use of Numbers and Special Characters).
+Create an application that generates a random password based on the criteria selected (password length, use of special characters, numbers, and lower/uppercase characters).
 
 ## User Story
 
