@@ -1,5 +1,4 @@
 
-// Assignment code here
 
 function generatePassword() {
   console.log("button clicked");
